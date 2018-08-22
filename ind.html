@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("https://photobest1.com/wp-content/uploads/2017/02/DC-Comics-Wallpaper-Background-hd-08.jpg");
+
+    min-height: 700px;
+ 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    border-radius: 25px;
+
+}
+
+/* Add styles to the form container */
+.container {
+    position: absolute;
+    right: 0;
+    margin: 20px ;
+    max-width: 500px;
+    padding: 20px ;
+    background:hsla(290,100%,50%,0.6);
+    border-radius: 15px;
+    color: white;
+
+}
+
+#country{
+     width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #000080;
+    border-radius: 15px;
+    color: yellow;
+
+}
+
+
+
+
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #000080;
+    border-radius: 15px;
+    color: yellow;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+h1
+{
+    text-align: center;
+    font-family: courier new;
+    font-size: 30px;
+    color: #00FFFF;
+    }
+    #now{
+        padding: 60px;
+     font-family: lucida console;
+     color: #00FFFF;   
+    }
+</style>
+</head>
+<body>
+
+
+<div class="bg-img">
+  <form action="/action_page.php" class="container">
+    
+    <h1>#ComicCarnival</h1>
+    
+    <div>
+    <p1 id="now">India's first online comic fan fest</p1>
+    </div>
+
+    <br>
+
+    <label for="email"><strong>Name</strong></label>
+    <input type="text" placeholder="Enter Name" name="email" required>
+
+    <label for="email"><strong>Email-id</strong></label>
+    <input type="text" placeholder="Enter email" name="psw" required>
+
+   
+
+    <label for="email"><strong>Whatsapp Contact</strong></label>
+    <input type="text" placeholder="Enter number" name="psw" required>
+
+  <label for="country"><strong>Language</strong></label>
+    <select id="country" name="country">
+      <option >English</option>
+      <option >Hindi</option>
+      <option >Telugu</option>
+    </select> 
+    
+  
+
+     <label for="country"><strong>Country</strong></label>
+    <select id="country" name="country">
+      <option >India</option>
+      <option >Sri Lanka</option>
+      <option >Bangladesh</option>
+    </select>
+  
+<br>
+<div style="text-align: center;">
+    <button type="submit" class="btn">Login</button>
+</div>
+  </form>
+</div>
+
+
+
+</body>
+</html>
